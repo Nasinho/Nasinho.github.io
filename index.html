@@ -196,7 +196,7 @@
 
 </script>
 <script>
-    const scriptURL = '< add you own link here >' // add your own app script link here
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxUY7WnnrHB-E5a-Lz4Lqr10qnLDwpFiaFvsD9MYFYcKTVK0Bpz98MBjqEZo9XEWkyzwg/exec' // add your own app script link here
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
   
@@ -204,7 +204,7 @@
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
-            msg.innerHTML = "Message sent successfully"
+            msg.innerHTML = "Nachricht wurde erfolgreich versendet"
             setTimeout(function(){
                 msg.innerHTML = ""
             },5000)
