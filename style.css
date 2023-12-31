@@ -191,14 +191,13 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    margin: auto;
+    margin:auto;
 }
 .work img{
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
-    margin: auto;
 }
 .layer{
     width: 100%;
